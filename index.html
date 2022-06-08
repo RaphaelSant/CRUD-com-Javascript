@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cavaleiros List</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <span>Cadastro de Cavaleiros</span>
+      <button onclick="openModal()" id="new">Incluir</i></button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Armadura</th>
+            <th>Hierarquia</th>
+            <th>Perfil</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    
+  </div>
+  <div class="modal-container">
+    <div class="modal">
+      <form>
+
+        <div class="m-perfil_container">
+          <div>
+            <label for="m-nome">Nome</label>
+            <input id="m-nome" type="text" placeholder="Nome do cavaleiro" required />
+            
+            <label for="m-armadura">Armadura</label>
+            <input id="m-armadura" type="text" placeholder="Armadura do cavaleiro" required />
+          </div>
+
+          <div id="m-imgPerfil"></div>
+        </div>
+        
+
+        <label for="m-hierarquia">Hierarquia</label>
+        <input id="m-hierarquia" type="text" placeholder="Hierarquia do zodíaco" required />
+        
+        <label for="m-perfil">Perfil</label>
+        <input id="m-perfil" type="text" placeholder="Insira a URL da imagem do cavaleiro" required />
+          
+        <div class="flex">
+          <button id="btnSalvar">Salvar</button>
+          <button id="btnCancelar">Cancelar</button>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
